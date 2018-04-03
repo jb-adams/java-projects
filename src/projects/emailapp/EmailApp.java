@@ -1,7 +1,21 @@
 package projects.emailapp;
 
+/**
+ * <h1>EmailApp</h1>
+ * The EmailApp class contains the main method, which is used to instantiate, run methods,
+ * and get/set variables for Email objects
+ *
+ * @author Jeremy Bruce Adams
+ * @version 0.1.0
+ * @since 2018-04-03
+ */
+
 public class EmailApp {
 
+    /**
+     * This is the main method, which instantiates and manages Email objects
+     * @param args array of command line arguments
+     */
     public static void main(String[] args) {
         System.out.println("---Employee 1---");
         Email e1 = new Email("jeremy", "adams", "informatics");
@@ -32,6 +46,5 @@ public class EmailApp {
         System.out.println("employee 3 toString():\n"+e3.toString());
         e3.setPassword("snackattack");
         System.out.println("new password is: " + e3.getPassword());
-
     }
 }
